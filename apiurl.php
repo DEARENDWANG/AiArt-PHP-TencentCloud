@@ -16,7 +16,7 @@ try {
     // 检查参数是否存在
     if (empty($secretId) || empty($secretKey)) {
         $errorResponse = array(
-            'msg' => '请提供正确的secretId和secretKey'
+            'msg' => '请检查链接中是否存在正确的的secretId和secretKey'
         );
         $jsonResponse = json_encode($errorResponse, JSON_UNESCAPED_UNICODE);
         die($jsonResponse);
