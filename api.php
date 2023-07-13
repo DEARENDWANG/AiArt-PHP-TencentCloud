@@ -18,7 +18,7 @@ try {
     $clientProfile = new ClientProfile();
     $clientProfile->setHttpProfile($httpProfile);
 
-    // 地域域名介入
+    // 地域域名接入
     $client = new AiartClient($cred, "ap-shanghai", $clientProfile);
 
     $keyword = $_GET['prompt'] ?? '';
