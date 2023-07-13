@@ -24,9 +24,6 @@ try {
     $keyword = $_GET['prompt'] ?? '';
     $styles = $_GET['styles'] ?? '';
     $resolution = $_GET['resolution'] ?? '';
-    $logoAdd = $_GET['logoAdd'] ?? '';
-
-    $logoAdd = intval($logoAdd);
 
     $req = new TextToImageRequest();
 
@@ -37,7 +34,6 @@ try {
         "ResultConfig" => array(
             "Resolution" => $resolution
         ),
-        "LogoAdd" => $logoAdd
     );
     $req->fromJsonString(json_encode($params));
 
