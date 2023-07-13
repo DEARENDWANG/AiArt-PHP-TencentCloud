@@ -1,4 +1,5 @@
 <?php
+//根据自己的sdk位置进行更改
 require_once '../vendor/autoload.php';
 use TencentCloud\Common\Credential;
 use TencentCloud\Common\Profile\ClientProfile;
