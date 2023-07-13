@@ -3,7 +3,10 @@
 # 安装 TencentCloud SDK PHP
 通过 Composer 安装，执行：<code>composer require tencentcloud/aiart</code>
 # 请求示例
+### 直接请求
 <pre>https://example.com/api.php?prompt=提示词&styles=绘画风格&resolution=尺寸</pre>
+### url携带密钥请求
+<pre>https://example.com/api.php?prompt=提示词&styles=绘画风格&resolution=尺寸&secretId=密钥&secretKey=密钥</pre>
 # 文生图风格列表
 | 风格类型  | 编号 | 风格类型  | 编号 |
 | ---- | ---- | ---- | ---- |
